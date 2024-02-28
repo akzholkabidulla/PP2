@@ -1,5 +1,9 @@
 import re
 
-message = input()
-result = re.findall(r"ab{0,}", message)
-print(result)
+txt = input()
+regex = re.search('^a(b*)$', txt)
+if regex:
+    print("True")
+else:
+    print("False")
+# символ 'a' за которым следует 0 или больше 'b'

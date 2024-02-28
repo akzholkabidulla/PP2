@@ -1,5 +1,7 @@
 import re
 
-message = input()
-result = re.sub("[., ]", ":", message)
-print(result)
+txt = input()
+regex = re.sub('[, .]', ":", txt)
+print(regex)
+
+# код заменяет все вхождения пробелов, запятых или точек в строке на двоеточие.
