@@ -1,13 +1,13 @@
 import os
 
-path1 = r"C:\Users\User\OneDrive\Рабочий стол\pp2\lab6\dir_and_files\a.txt"
-path2 = r"C:\Users\User\OneDrive\Рабочий стол\pp2\lab6\dir_and_files\b.txt"
+path1 = input()
+path2 = input()
 
 temp1 = open(path1, "r")
 temp2 = open(path2, "w")
 
 for i in temp1:
-    temp2.write(str(i))
+    temp2.write(i) # Этот цикл читает каждую строку из файла t1 и записывает ее в файл t2.
 temp1.close()
 temp2.close()
 
